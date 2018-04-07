@@ -14,7 +14,7 @@ int main() {
     }
 
 
-    cv::Ptr<aruco::Dictionary> dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_6X6_250);
+    cv::Ptr<aruco::Dictionary> dictionary = cv::aruco::getPredefinedDictionary(cv::aruco::DICT_4X4_50);
 
 
 //unconditional loop
@@ -25,7 +25,11 @@ int main() {
             std::vector<int> ids;
         std::vector<std::vector<cv::Point2f> > corners;
         cv::aruco::detectMarkers(cameraFrame, dictionary, corners, ids);
-
+        std::cout << ids.size() << std::endl;
+        // if at least one marker detected
+        if (ids.size() > 0) {
+            cv::aruco::drawDetectedMarkers(cameraFrame, corners, ids);
+        }
 
         imshow("cam", cameraFrame);
 
