@@ -142,6 +142,7 @@ AssetTracking: CMakeFiles/AssetTracking.dir/main.cpp.o
 AssetTracking: CMakeFiles/AssetTracking.dir/ArucoTracker.cpp.o
 AssetTracking: CMakeFiles/AssetTracking.dir/ArucoMarker.cpp.o
 AssetTracking: CMakeFiles/AssetTracking.dir/build.make
+AssetTracking: /usr/local/lib/libmosquitto.1.dylib
 AssetTracking: /usr/local/lib/libopencv_stitching.3.4.1.dylib
 AssetTracking: /usr/local/lib/libopencv_superres.3.4.1.dylib
 AssetTracking: /usr/local/lib/libopencv_videostab.3.4.1.dylib

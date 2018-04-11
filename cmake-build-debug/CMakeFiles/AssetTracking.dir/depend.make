@@ -263,6 +263,8 @@ CMakeFiles/AssetTracking.dir/ArucoTracker.cpp.o: /usr/local/include/opencv2/xfea
 CMakeFiles/AssetTracking.dir/ArucoTracker.cpp.o: /usr/local/include/opencv2/xfeatures2d/nonfree.hpp
 
 CMakeFiles/AssetTracking.dir/main.cpp.o: ../main.cpp
+CMakeFiles/AssetTracking.dir/main.cpp.o: /usr/local/include/mosquitto.h
+CMakeFiles/AssetTracking.dir/main.cpp.o: /usr/local/include/mosquittopp.h
 CMakeFiles/AssetTracking.dir/main.cpp.o: /usr/local/include/opencv/cxcore.h
 CMakeFiles/AssetTracking.dir/main.cpp.o: /usr/local/include/opencv2/aruco.hpp
 CMakeFiles/AssetTracking.dir/main.cpp.o: /usr/local/include/opencv2/aruco/dictionary.hpp

@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 11)
 
 find_package( OpenCV )
 include_directories( ${OpenCV_INCLUDE_DIRS} )
+link_directories(/usr/local/sbin)
 
 
 find_package(aruco REQUIRED )
@@ -14,5 +15,6 @@ include_directories(aruco_INCLUDE_DIRS)
 
 set(SOURCE_FILES main.cpp ArucoTracker.cpp ArucoTracker.h ArucoMarker.cpp ArucoMarker.h)
 add_executable(AssetTracking ${SOURCE_FILES})
+target_link_libraries(AssetTracking /usr/local/lib/libmosquitto.1.dylib)
 target_link_libraries( AssetTracking ${OpenCV_LIBS})
 target_link_libraries( AssetTracking ${aruco_LIBS})

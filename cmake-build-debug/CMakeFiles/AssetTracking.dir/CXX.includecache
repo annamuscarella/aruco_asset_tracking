@@ -35,6 +35,8 @@ opencv2/opencv.hpp
 -
 opencv2/aruco.hpp
 -
+mosquittopp.h
+-
 
 /usr/local/include/aruco/aruco.h
 markerdetector.h
@@ -136,6 +138,18 @@ markermap.h
 map
 -
 opencv2/core.hpp
+-
+
+/usr/local/include/mosquitto.h
+stdbool.h
+-
+
+/usr/local/include/mosquittopp.h
+cstdlib
+-
+mosquitto.h
+-
+time.h
 -
 
 /usr/local/include/opencv/cv.h
